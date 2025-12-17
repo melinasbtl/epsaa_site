@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="utf-8" />
+  <title>Motion</title>
+
+  <link href="text_txt-web-resources/css/idGeneratedStyles.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Conteneur du projet en flex, texte à gauche, vidéo à droite */
+    .project_wrapper {
+      display: flex;
+      justify-content: flex-end; /* pousse le contenu vers la droite */
+      align-items: flex-start;   /* aligne verticalement en haut */
+      gap: 2rem;                 /* espace entre texte et vidéo */
+      margin-bottom: 2rem;
+    }
+
+    /* Texte limité à une certaine largeur */
+    .project_text {
+      max-width: 40%;
+    }
+
+    /* Colonne vidéo */
+    .project_media {
+      text-align: right;
+    }
+
+    /* Vidéo réduite et responsive */
+    .project_video {
+      width: 50% !important;
+      height: auto !important;
+      border-radius: 8px;
+      display: inline-block !important;
+    }
+
+    /* Optionnel : centrage de la page */
+    body {
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body id="text_txt">
+
+  <!-- IMAGE DE PRÉVISUALISATION -->
+  <img id="previewImage" alt="">
+
+  <!-- INTRO -->
+  <p class="Paragraphe-standard">
+    <span class="CharOverride-1" id="_idTextAnchor">
+      Mélina Sabatier
+    </span><br>
+
+    <span class="CharOverride-1">
+      <i>designer graphique</i>,<br>
+      <i>artiste</i>,<br>
+      et <i>faiseuse d'image</i><br><br>
+    </span>
+  </p>
+
+  <br><br>
+
+  <!-- PREMIER PROJET -->
+  <div class="project_wrapper">
+    <div class="project_text">
+      <span class="CharOverride-1">[AfterEffect]</span>
+      <p>
+        Expérimentation graphique en motion design,<br>
+        Mise en place sur écran LED en 85*85px
+      </p>
+    </div>
+
+    <div class="project_media">
+      <video class="project_video" autoplay muted loop>
+        <source src="images/motion.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+</body>
+</html>
